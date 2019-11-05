@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Миша Забава](https://up.htmlacademy.ru/adaptive/18/user/1066793).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиля Зилюкина](https://htmlacademy.ru/profile/id803445).
 
 ---
 
