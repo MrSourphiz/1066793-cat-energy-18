@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Форма Кэт энерджи</title>
-</head>
-<body>
-  <header class="page-header">
-      <a class="page-header__logo">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Подбор программы от Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="img/" width="33" height="38" alt="Логотип магазина Кэт энерджи">
       </a>
 
@@ -20,23 +20,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
+            <li class="site-list__item site-list__item--current">
+              <a>Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="visually-hidden">Подбор программы от Кэт энерджи</h1>
+    </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-txt" src="img/" width="101" height="18" alt="Текстовый логотип магазина Кэт энерджи">
       </a>
 
@@ -53,9 +55,11 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">HTML Academy</a>
-        <img class="copyright__logo" src="img/" alt="Логотип разработчика">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/18">
+          <img class="copyright__logo" src="img/" alt="Логотип разработчика">
+        </a>
       </div>
     </footer>
-</body>
+  </body>
 </html>
