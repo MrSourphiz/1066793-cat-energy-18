@@ -35,6 +35,102 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Подбор программы от Кэт энерджи</h1>
+
+      <section class="program">
+        <h2 class="program__title">Подбор программы</h2>
+        <p class="program__description">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <form class="program__form" method="get" action="#">
+
+          <fieldset class="program__section cat-info">
+            <legend class="cat-info__title">Анкета</legend>
+            <ul class="cat-info__list">
+              <li class="cat-info__item">
+                <label for="cat-name">Имя:*</label>
+                <input type="text" id="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-weight">Вес (кг):*</label>
+                <input type="text" id="cat-weight" placeholder="7" required>
+              </li>
+              <li class="cat-info__item">
+                <label for="cat-age">Возраст (лет):</label>
+                <input type="text" id="cat-name" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program__section program-filter">
+            <legend class="program-filter__title">Фильтр</legend>
+            <ul class="program-filter__list">
+              <li class="program-filter__item">
+                <input type="radio" id="losing-weight" value="losing-weight" name="filter-group" checked>
+                <label for="losing-weight">Похудение</label>
+              </li>
+              <li class="program-filter__item">
+                <input type="radio" id="mass-set" value="mass-set" name="filter-group">
+                <label for="mass-set">Набор массы</label>
+              </li>
+              <li class="program-filter__item">
+                <input type="radio" id="recommendation" value="recommendation" name="filter-group">
+                <label for="recommendation">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program__section owner-info">
+            <legend class="owner-info__title">Контактные данные (владельца кота)</legend>
+            <ul class="owner-info__list">
+              <li class="owner-info__item">
+                <label for="owner-email">E-mail:*</label>
+                <input type="text" id="owner-email" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="owner-info__item">
+                <label for="owner-tel">Телефон:*</label>
+                <input type="text" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program__section about-cat">
+            <legend class="about-cat__title">Комментарий</legend>
+            <textarea id="about-cat-txt" rows="5" cols="45" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="program__section additional-filter">
+            <legend class="additional-filter__title">Дополнительно</legend>
+            <ul class="additional-filter__list">
+              <li class="additional-filter__item">
+                <input type="checkbox" id="sugar-substitute" name="sugar-substitute-filter" value="sugar-substitute" checked>
+                <label for="sugar-substitute">Сахарозаменитель</label>
+              </li>
+              <li class="additional-filter__item">
+                <input type="checkbox" id="water" name="water-filter" value="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li class="additional-filter__item">
+                <input type="checkbox" id="milk" name="milk-filter" value="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li class="additional-filter__item">
+                <input type="checkbox" id="vitamin" name="vitamin-filter" value="vitamin">
+                <label for="vitamin">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button class="program__button" type="submit">Отправить заявку</button>
+        <p class="program__additional-txt">* — Обязательные поля</p>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <a class="contacts__map-open" href="#">
+          <img class="contacts__map" src="img/" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </a>
+      </section>
     </main>
 
     <footer class="page-footer">
