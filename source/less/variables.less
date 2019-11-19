@@ -24,7 +24,7 @@
 
   font-family: @main-font;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   text-align: @text-align;
   text-decoration: @text-decoration;
   text-transform: @text-transform;
@@ -43,7 +43,7 @@
 
   font-family: @main-font;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   text-align: @text-align;
   text-decoration: @text-decoration;
   text-transform: @text-transform;
@@ -53,4 +53,31 @@
 
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.fieldset-border() {
+  border: none;
+  border-bottom: @border;
+}
+
+.legend-config() {
+  font-family: @main-font;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: @font-color-black;
+}
+
+.ul-config() {
+  list-style: @list-style;
+
+  padding: 0;
+}
+
+.program-labels() {
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 1.15;
+  text-transform: @text-transform;
+  color: @font-color-black;
 }
