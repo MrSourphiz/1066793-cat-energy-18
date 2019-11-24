@@ -1,3 +1,6 @@
+@tablet-width: 708px;
+@desktop-width: 1220px;
+
 @main-font: "Oswald", "Arial", sans-serif;
 @additional-font: "Arial", sans-serif;
 @font-color-black: #111111;
@@ -53,6 +56,63 @@
 
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.tablet-button-green() {
+  display: block;
+  width: 245px;
+  height: 20px;
+
+  font-family: @main-font;
+  font-size: 20px;
+  line-height: 1;
+  text-align: @text-align;
+  text-decoration: @text-decoration;
+  text-transform: @text-transform;
+  color: @font-color-white;
+
+  background-color: @bg-color-green;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.catalog-button-green() {
+  display: block;
+  width: 249px;
+  height: 20px;
+
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: @text-align;
+  text-decoration: @text-decoration;
+  text-transform: @text-transform;
+  color: @font-color-white;
+
+  background-color: @bg-color-green;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog-button-grey() {
+  display: block;
+  width: 249px;
+  height: 20px;
+
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: @text-align;
+  text-decoration: @text-decoration;
+  text-transform: @text-transform;
+  color: @font-color-black;
+
+  background-color: @bg-color-grey;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .fieldset-border() {
