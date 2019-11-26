@@ -5,7 +5,6 @@
 }
 
 .intro__first-screen {
-  max-width: 320px;
   height: 290px;
 
   text-align: @text-align;
@@ -15,6 +14,7 @@
   background-repeat: @bg-repeat;
 
   padding-top: 15px;
+  margin: 0 auto;
 }
 
 .intro__title {
@@ -23,8 +23,6 @@
   line-height: 1;
   font-weight: 400;
   color: @font-color-white;
-
-  margin: 0;
 }
 
 .intro__slogan {
@@ -34,12 +32,62 @@
   text-transform: @text-transform;
   color: @font-color-white;
 
-  margin: 0;
   margin-top: 28px;
 }
 
 .intro__button {
   .mobile-button-green();
+  margin: auto;
   margin-top: 135px;
-  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .intro__first-screen {
+    max-width: 427px;
+
+    text-align: left;
+
+    background-color: @bg-color-white;
+    background-image: none;
+
+    margin: 0;
+    margin-left: 89px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 1;
+    color: @font-color-black;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 1;
+    color: @font-color-black;
+  }
+
+  .intro__button {
+    .tablet-button-green();
+    margin: 0;
+    margin-left: 89px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    max-width: 1220px;
+  }
+
+  .intro__first-screen {
+    margin-left: 80px;
+  }
+
+  .intro__button {
+    margin-left: 80px;
+  }
 }
