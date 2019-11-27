@@ -12,3 +12,66 @@
   line-height: 1.45;
   color: @font-color-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    background-color: @bg-color-grey;
+  }
+
+  .contacts__wraper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    max-width: 155px;
+
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .contacts__address {
+    max-width: 155px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 396px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wraper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    align-items: center;
+    width: 402px;
+    height: 201px;
+
+    background-color: @bg-color-white;
+
+    padding-right: 91px;
+    padding-left: 77px;
+
+    margin: 0;
+  }
+
+  .contacts__map {
+    width: 1440px;
+    height: 400px;
+  }
+}

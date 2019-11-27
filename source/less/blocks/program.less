@@ -1,5 +1,6 @@
 .program {
-  max-width: 320px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .program__title {
@@ -19,39 +20,41 @@
 }
 
 .program__section {
-  .fieldset-border();
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-.cat-info__list {
-  .ul-config();
-}
-
-.cat-info__label {
-  .program-labels();
-}
-
-.program-filter__list {
-  .ul-config();
-}
-
-.program-filter__label {
-  .program-labels();
-}
-
-.owner-info__title {
+.owner-info__title,
+.about-cat__title,
+.additional-filter__title {
   .legend-config();
 }
 
-.owner-info__list {
+.cat-info__list,
+.cat-info__filter,
+.owner-info__list,
+.additional-filter__list {
   .ul-config();
 }
 
-.owner-info__label {
+.cat-info__label,
+.owner-info__label,
+.additional-filter__label {
   .program-labels();
 }
 
-.about-cat__title {
-  .legend-config();
+.cat-info__input,
+.owner-info__input {
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: @font-color-grey;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: @border;
 }
 
 .about-cat__text {
@@ -60,18 +63,6 @@
   line-height: 1.15;
   text-transform: @text-transform;
   color: @font-color-grey;
-}
-
-.additional-filter__title {
-  .legend-config();
-}
-
-.additional-filter__list {
-  .ul-config();
-}
-
-.additional-filter__label {
-  .program-labels();
 }
 
 .program__button {
@@ -94,4 +85,174 @@
   font-size: 14px;
   line-height: 1.15;
   color: @font-color-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .program__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .program__description {
+    width: 325px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 41px;
+  }
+
+  .owner-info__title,
+  .about-cat__title,
+  .additional-filter__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .cat-info__list,
+  .owner-info__list,
+  .additional-filter__list {
+    margin-left: 41px;
+  }
+
+  .cat-info__filter {
+    width: 628px;
+    height: 194px;
+    border: @border;
+    margin-left: 41px;
+  }
+
+  .cat-info__label,
+  .owner-info__label,
+  .additional-filter__label {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .cat-info__input,
+  .owner-info__input {
+    font-size: 20px;
+    line-height: 1;
+
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 19px;
+
+    margin-left: 15px;
+  }
+
+  .about-cat__text {
+    width: 628px;
+    height: 172px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 41px;
+  }
+
+  .additional-filter__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 535px;
+  }
+
+  .additional-filter__item {
+    margin-right: 60px;
+  }
+
+  .program__other {
+    display: flex;
+    flex-direction: row;
+    margin-left: 41px;
+  }
+
+  .program__button {
+    width: 283px;
+    height: 52px;
+
+    font-family: @main-font;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: @text-transform;
+    color: @font-color-white;
+
+    background-color: @bg-color-green;
+
+    border: none;
+  }
+
+  .program__additional-txt {
+    font-size: 16px;
+    line-height: 1;
+
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .program__description {
+    margin-left: 0;
+  }
+
+  .cat-info__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cat-info__filter {
+    width: 568px;
+  }
+
+  .cat-info__list,
+  .owner-info__list,
+  .additional-filter__list {
+    margin-left: 0;
+  }
+
+  .owner-info__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .owner-info__item:first-child {
+    margin-right: 80px;
+  }
+
+  .about-cat__title {
+    margin-bottom: 75px;
+  }
+
+  .about-cat__text {
+    width: 1218px;
+    margin-left: 0;
+  }
+
+  .additional-filter__list {
+    width: 1220px;
+  }
+
+  .additional-filter__item {
+    margin-right: 80px;
+  }
+
+  .program__other {
+    margin-left: 0;
+  }
+
+  .program__button {
+    width: 568px;
+  }
+
+  .program__additional-txt {
+    margin-left: 80px;
+  }
 }

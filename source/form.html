@@ -68,39 +68,37 @@
         <form class="program__form" method="get" action="#">
 
           <fieldset class="program__section cat-info">
-            <legend class="cat-info__title">Анкета</legend>
-            <ul class="cat-info__list">
-              <li class="cat-info__item">
-                <label class="cat-info__label" for="cat-name">Имя:*</label>
-                <input type="text" id="cat-name" placeholder="Барсик" required>
-              </li>
-              <li class="cat-info__item">
-                <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-                <input type="text" id="cat-weight" placeholder="7" required>
-              </li>
-              <li class="cat-info__item">
-                <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-                <input type="text" id="cat-name" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="program__section program-filter">
-            <legend class="program-filter__title">Фильтр</legend>
-            <ul class="program-filter__list">
-              <li class="program-filter__item">
-                <input type="radio" id="losing-weight" value="losing-weight" name="filter-group" checked>
-                <label class="program-filter__label" for="losing-weight">Похудение</label>
-              </li>
-              <li class="program-filter__item">
-                <input type="radio" id="mass-set" value="mass-set" name="filter-group">
-                <label class="program-filter__label" for="mass-set">Набор массы</label>
-              </li>
-              <li class="program-filter__item">
-                <input type="radio" id="recommendation" value="recommendation" name="filter-group">
-                <label class="program-filter__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
+            <legend class="cat-info__title visually-hidden">Анкета</legend>
+            <div class="cat-info__wrapper">
+              <ul class="cat-info__list">
+                <li class="cat-info__item">
+                  <label class="cat-info__label" for="cat-name">Имя:*</label>
+                  <input class="cat-info__input" type="text" id="cat-name" placeholder="Барсик" required>
+                </li>
+                <li class="cat-info__item">
+                  <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="cat-info__input" type="text" id="cat-weight" placeholder="7" required>
+                </li>
+                <li class="cat-info__item">
+                  <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
+                  <input class="cat-info__input" type="text" id="cat-age" placeholder="7">
+                </li>
+              </ul>
+              <ul class="cat-info__filter">
+                <li class="cat-info__filter-item">
+                  <input type="radio" id="losing-weight" value="losing-weight" name="filter-group" checked>
+                  <label class="cat-info__label" for="losing-weight">Похудение</label>
+                </li>
+                <li class="cat-info__filter-item">
+                  <input type="radio" id="mass-set" value="mass-set" name="filter-group">
+                  <label class="cat-info__label" for="mass-set">Набор массы</label>
+                </li>
+                <li class="cat-info__filter-item">
+                  <input type="radio" id="recommendation" value="recommendation" name="filter-group">
+                  <label class="cat-info__label" for="recommendation">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="program__section owner-info">
@@ -108,11 +106,11 @@
             <ul class="owner-info__list">
               <li class="owner-info__item">
                 <label class="owner-info__label" for="owner-email">E-mail:*</label>
-                <input type="text" id="owner-email" placeholder="kuklachev@gmail.com" required>
+                <input class="owner-info__input" type="text" id="owner-email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="owner-info__item">
                 <label class="owner-info__label" for="owner-tel">Телефон:*</label>
-                <input type="text" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+                <input class="owner-info__input" type="text" id="owner-tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -144,13 +142,17 @@
             </ul>
           </fieldset>
         </form>
-        <button class="program__button" type="submit">Отправить заявку</button>
-        <p class="program__additional-txt">* — Обязательные поля</p>
+        <div class="program__other">
+          <button class="program__button" type="submit">Отправить заявку</button>
+          <p class="program__additional-txt">* — Обязательные поля</p>
+        </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wraper">
+          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
         <a class="contacts__map-open" href="#">
           <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
         </a>
