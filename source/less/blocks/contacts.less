@@ -1,21 +1,43 @@
+.contacts {
+  margin-top: 30px;
+}
+
+.contacts__wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
 .contacts__title {
+  max-width: 124px;
+
   font-family: @main-font;
   font-size: 16px;
   line-height: 1.25;
   text-transform: @text-transform;
   color: @font-color-black;
+
+  margin: 0;
 }
 
 .contacts__address {
+  max-width: 140px;
+
   font-family: @additional-font;
   font-size: 14px;
   line-height: 1.45;
   color: @font-color-grey;
+
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    background-color: @bg-color-grey;
+    background-color: @bg-color-white;
   }
 
   .contacts__wraper {
@@ -23,7 +45,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     max-width: 708px;
+    height: 201px;
     margin: 0 auto;
   }
 
