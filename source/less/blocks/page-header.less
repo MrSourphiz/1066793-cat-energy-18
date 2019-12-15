@@ -22,12 +22,43 @@
   width: 191px;
 }
 
+.page-header__logo--black {
+  fill: #111111;
+}
+
 .page-header__logo--yellow {
   fill: #fdc305;
 }
 
 .page-header__logo--red {
   fill: #f06351;
+}
+
+.page-header__link:hover .page-header__logo--black,
+.page-header__link:focus .page-header__logo--black {
+  fill: rgba(17, 17, 17, 0.8);
+}
+
+.page-header__link:hover .page-header__logo--yellow,
+.page-header__link:focus .page-header__logo--yellow {
+  fill: rgba(252, 195, 5, 0.8);
+}
+
+.page-header__link:hover .page-header__logo--red,
+.page-header__link:focus .page-header__logo--red {
+  fill: rgba(239, 98, 81, 0.8);
+}
+
+.page-header__link:active .page-header__logo {
+  fill: rgba(17, 17, 17, 0.6);
+}
+
+.page-header__link:active .page-header__logo--yellow {
+  fill: rgba(252, 195, 5, 0.6);
+}
+
+.page-header__link:active .page-header__logo--red {
+  fill: rgba(239, 98, 81, 0.6);
 }
 
 .main-nav__button {
