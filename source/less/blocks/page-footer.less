@@ -41,8 +41,7 @@
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 
   list-style: @list-style;
 }
@@ -50,6 +49,15 @@
 .social__item {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.social__item:nth-child(2) {
+  padding-left: 35px;
+  padding-right: 40px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
 }
 
 .social__link:hover .social__icon,
@@ -73,6 +81,8 @@
   text-decoration: none;
 
   margin: 0 auto;
+
+  cursor: pointer;
 }
 
 .copyright__text {
@@ -83,8 +93,6 @@
 }
 
 .copyright__logo {
-  width: 27px;
-
   fill: #666666;
 }
 

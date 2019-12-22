@@ -11,7 +11,10 @@
   font-weight: 400;
   color: @font-color-black;
 
-  padding: 21.5px 20px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
 
   border-bottom: @border;
 
@@ -38,8 +41,8 @@
 
 .product-list__img {
   position: absolute;
-  top: -10px;
-  left: 30px;
+  top: 0;
+  left: 23px;
 
   z-index: -1;
 }
@@ -49,8 +52,8 @@
   flex-direction: column;
 
   width: 140px;
-  margin-bottom: 20px;
-  margin-left: 160px;
+  margin-bottom: 19px;
+  margin-left: 140px;
 }
 
 .product-list__title {
@@ -62,6 +65,10 @@
   font-weight: 400;
   text-transform: @text-transform;
   color: @font-color-black;
+
+  padding-top: 5px;
+
+  margin-bottom: 13px;
 }
 
 .product-list__table {
@@ -74,7 +81,7 @@
 
 .product-list__value {
   text-align: right;
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .product-list__description {
@@ -107,8 +114,8 @@
 }
 
 .product-list__item--stock .product-list__title {
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 14px;
+  margin-bottom: 9px;
 }
 
 .product-list__item--stock .product-list__description {
@@ -166,8 +173,13 @@
   .product-list__item:last-child {
     width: 322px;
     height: 429px;
+
     background-color: @bg-color-white;
     border: @border;
+  }
+
+  .product-list__item:nth-child(n+7) {
+    margin-bottom: 40px;
   }
 
   .product-list__img {
@@ -185,17 +197,19 @@
     width: 249px;
 
     margin: 0 auto;
-    margin-top: 165px;
+    margin-top: 164px;
   }
 
   .product-list__title {
-    width: 125px;
+    width: 135px;
     font-size: 20px;
     line-height: 1;
     text-align: center;
 
+    padding-top: 0;
+
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   .product-list__table,
@@ -238,8 +252,8 @@
   .product-list__item--stock .product-list__title {
     width: 135px;
 
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 45px;
+    margin-bottom: 27px;
   }
 
   .product-list__item--stock .product-list__description {
@@ -260,9 +274,14 @@
     max-width: 1220px;
   }
 
+  .catalog__title {
+    padding-top: 14px;
+  }
+
   .product-list__item {
     width: 245px;
     margin-right: 80px;
+    margin-bottom: 142px;
   }
 
   .product-list__item:nth-child(2n) {
@@ -271,6 +290,10 @@
 
   .product-list__item:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .product-list__item:nth-child(n+5) {
+    margin-bottom: 47px;
   }
 
   .product-list__item:last-child {
@@ -282,7 +305,7 @@
   }
 
   .product-list__img--big {
-    top: -65px;
+    top: -80px;
   }
 
   .product-list__wrapper {

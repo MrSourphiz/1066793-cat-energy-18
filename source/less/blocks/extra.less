@@ -9,17 +9,18 @@
   font-weight: 400;
   color: @font-color-black;
 
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 
   border-bottom: @border;
 
   margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .extra__list {
   padding-left: 0;
-  margin-top: 14px;
-  margin-bottom: 39px;
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 
 .additional-list {
@@ -38,8 +39,8 @@
   text-transform: @text-transform;
   color: @font-color-black;
 
-  margin-top: 14px;
-  margin-bottom: 16px;
+  margin-top: 13px;
+  margin-bottom: 11px;
 }
 
 .additional-list__table {
@@ -57,7 +58,7 @@
 
 .additional-list__order-button {
   .mobile-button-green();
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .stock {
@@ -69,6 +70,8 @@
   background-color: @bg-color-green;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  margin-bottom: 35px;
 }
 
 .stock__logo {
@@ -78,7 +81,7 @@
   fill: #ffffff;
 
   margin-top: 65px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .stock__txt {
@@ -109,8 +112,8 @@
 
     border: none;
 
-    margin-bottom: 81px;
-    margin-left: 24px;
+    margin-bottom: 77px;
+    margin-left: 37px;
   }
 
   .extra__title::before {
@@ -139,12 +142,18 @@
     background-color: @bg-color-green;
   }
 
+  .extra__list {
+    margin-bottom: 70px;
+  }
+
   .additional-list__item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    padding-bottom: 25px;
 
     border: @border;
   }
@@ -153,7 +162,7 @@
     font-size: 20px;
     line-height: 1;
 
-    margin-top: 27px;
+    margin-top: 25px;
     margin-bottom: 27px;
     margin-left: 38px;
   }
@@ -161,12 +170,16 @@
   .additional-list__table {
     font-size: 16px;
     line-height: 1.25;
-    margin-right: 37px;
+    margin-right: 32px;
   }
 
   .additional-list__field {
     width: 150px;
     text-align: right;
+  }
+
+  .additional-list__value {
+    width: 75px;
   }
 
   .additional-list__order-button {
@@ -183,15 +196,22 @@
 
     width: 708px;
     height: 199px;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+
+    margin-bottom: 76px;
   }
 
   .stock__logo {
+    margin-top: 49px;
     margin-left: 91px;
   }
 
   .stock__txt {
     width: 160px;
     text-align: left;
+    margin-top: 7px;
     margin-right: 125px;
   }
 }
@@ -200,23 +220,26 @@
   .extra {
     max-width: 1220px;
     margin: 0 auto;
-    margin-bottom: 86px;
+    margin-bottom: 5px;
   }
 
   .extra__title {
+    margin-bottom: 80px;
     margin-left: 0;
   }
 
   .extra__title::before {
-    left: -135px;
+    top: 22px;
+    left: -110px;
 
     width: 70px;
   }
 
   .extra__title::after {
-    width: 957px;
-
+    top: 22px;
     right: -110px;
+
+    width: 957px;
   }
 
   .extra__wrapper {
@@ -247,7 +270,7 @@
   }
 
   .additional-list__table {
-    margin-right: 40px;
+    margin-right: 45px;
     margin-left: 80px;
   }
 
@@ -275,10 +298,14 @@
     justify-content: space-around;
     width: 245px;
     height: 289px;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .stock__logo {
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .stock__txt {

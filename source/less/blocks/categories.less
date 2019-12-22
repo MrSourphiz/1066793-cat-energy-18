@@ -12,13 +12,13 @@
 
 .categories__item {
   width: 280px;
-  height: 230px;
+  height: 235px;
 
   color: @font-color-black;
 
   background-color: @bg-color-grey;
 
-  padding-top: 35px;
+  padding-top: 30px;
 
   margin-top: 20px;
 }
@@ -59,7 +59,7 @@
   content: "";
 
   position: absolute;
-  top: -7px;
+  top: -8px;
   left: -63px;
 
   width: 35px;
@@ -97,10 +97,10 @@
 
   border-bottom: @border;
 
-  padding-bottom: 25px;
+  padding-bottom: 21px;
 
   margin: 0 20px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .categories__button {
@@ -120,8 +120,8 @@
   content: "";
 
   position: absolute;
-  top: 13px;
-  right: -38px;
+  top: 11px;
+  right: -28px;
 
   width: 17px;
   height: 3px;
@@ -133,8 +133,8 @@
   content: "";
 
   position: absolute;
-  top: 7.5px;
-  right: -52px;
+  top: 6px;
+  right: -42px;
 
   border: 7px solid transparent;
   border-left: 7px solid #3e4242;
@@ -142,14 +142,14 @@
 
 .categories__button:hover::before,
 .categories__button:focus::before {
-  right: -47px;
+  right: -37px;
 
   width: 26px;
 }
 
 .categories__button:hover::after,
 .categories__button:focus::after {
-  right: -61px;
+  right: -51px;
 }
 
 .categories__button:active {
@@ -168,18 +168,29 @@
   .categories {
     max-width: 708px;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   .categories__item {
     width: 653px;
-    height: 291px;
+    height: 297px;
 
-    padding-top: 80px;
+    padding-top: 75px;
     padding-left: 53px;
+
+    margin-top: 30px;
+  }
+
+  .categories__title {
+    font-size: 36px;
+    line-height: 1.03;
+
+    margin-bottom: 25px;
+    margin-left: 0;
   }
 
   .categories__title::before {
-    top: 5px;
+    top: 17px;
     left: auto;
     right: 60px;
 
@@ -188,6 +199,7 @@
   }
 
   .categories__title::after {
+    top: 6px;
     left: auto;
     right: 90px;
 
@@ -198,7 +210,7 @@
   }
 
   .categories__item:nth-child(2) .categories__title::after {
-    top: 50px;
+    top: 60px;
     left: auto;
     right: 27px;
 
@@ -208,24 +220,21 @@
     background-size: 268px 112px;
   }
 
-  .categories__title {
-    font-size: 36px;
-    line-height: 1.03;
-
-    margin-left: 0;
-  }
-
   .categories__description {
     max-width: 372px;
 
     font-size: 16px;
     line-height: 1.5;
 
-    padding-bottom: 60px;
+    padding-bottom: 55px;
 
     border-bottom: none;
 
     margin: 0;
+  }
+
+  .categories__item:nth-child(2) .categories__description {
+    padding-bottom: 80px;
   }
 
   .categories__button {
@@ -234,13 +243,33 @@
 
     margin: 0;
   }
+
+  .categories__button::before {
+    top: 16px;
+    right: -40px;
+  }
+
+  .categories__button::after {
+    top: 11px;
+    right: -54px;
+  }
+
+  .categories__button:hover::before,
+  .categories__button:focus::before {
+    right: -49px;
+  }
+
+  .categories__button:hover::after,
+  .categories__button:focus::after {
+    right: -63px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .categories {
     max-width: 1220px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 83px;
   }
 
   .categories__list {
@@ -250,9 +279,9 @@
 
   .categories__item {
     width: 518px;
-    height: 291px;
+    height: 297px;
 
-    padding-top: 81px;
+    padding-top: 75px;
     padding-left: 52px;
 
     margin-right: 80px;
@@ -264,18 +293,12 @@
   }
 
   .categories__title {
-    margin-bottom: 81px;
+    margin-bottom: 76px;
     margin-left: 164px;
   }
 
-  .categories__description {
-    max-width: 465px;
-    height: 63px;
-    padding-bottom: 40px;
-  }
-
   .categories__title::before {
-    top: -34px;
+    top: -29px;
     left: -164px;
     right: auto;
 
@@ -284,7 +307,7 @@
   }
 
   .categories__title::after {
-    top: -40px;
+    top: -35px;
     left: -150px;
     right: auto;
 
@@ -295,7 +318,7 @@
   }
 
   .categories__item:nth-child(2) .categories__title::after {
-    top: -12px;
+    top: -7px;
     left: -182px;
     right: auto;
 
@@ -303,5 +326,35 @@
     height: 56px;
 
     background-size: 134px 56px;
+  }
+
+  .categories__description {
+    max-width: 465px;
+    height: 63px;
+    padding-bottom: 40px;
+  }
+
+  .categories__item:nth-child(2) .categories__description {
+    padding-bottom: 40px;
+  }
+
+  .categories__button::before {
+    top: 12px;
+    right: -40px;
+  }
+
+  .categories__button::after {
+    top: 7px;
+    right: -54px;
+  }
+
+  .categories__button:hover::before,
+  .categories__button:focus::before {
+    right: -49px;
+  }
+
+  .categories__button:hover::after,
+  .categories__button:focus::after {
+    right: -63px;
   }
 }
