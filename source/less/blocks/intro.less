@@ -1,19 +1,24 @@
 .intro {
+  position: relative;
+
   font-family: @main-font;
   font-size: 20px;
   line-height: 1;
 }
 
 .intro__first-screen {
-  height: 290px;
+  height: 277px;
 
   text-align: @text-align;
 
   background-color: @bg-color-green;
   background-image: @bg-image;
+  background-position: center;
+  background-size: 320px 305px;
   background-repeat: @bg-repeat;
 
-  padding-top: 15px;
+  padding-top: 28px;
+
   margin: 0 auto;
 }
 
@@ -23,6 +28,9 @@
   line-height: 1;
   font-weight: 400;
   color: @font-color-white;
+
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .intro__slogan {
@@ -31,8 +39,12 @@
   line-height: 1;
   text-transform: @text-transform;
   color: @font-color-white;
+}
 
-  margin-top: 28px;
+.intro__img {
+  position: absolute;
+  top: 167px;
+  left: 20px;
 }
 
 .intro__button {
@@ -41,19 +53,28 @@
   margin-top: 135px;
 }
 
+.intro__desktop-substrate {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .intro {
     max-width: 708px;
+    height: 805px;
+
     margin: 0 auto;
   }
 
   .intro__first-screen {
     max-width: 427px;
+    height: 180px;
 
     text-align: left;
 
     background-color: @bg-color-white;
     background-image: none;
+
+    padding-top: 0;
 
     margin: 0;
     margin-left: 89px;
@@ -63,17 +84,28 @@
     font-size: 60px;
     line-height: 1;
     color: @font-color-black;
+    margin: 0;
   }
 
   .intro__slogan {
     font-size: 20px;
     line-height: 1;
     color: @font-color-black;
+
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .intro__img {
+    z-index: -1;
+    top: 200px;
+    left: 2px;
   }
 
   .intro__button {
     .tablet-button-green();
     margin: 0;
+    margin-top: 49px;
     margin-left: 89px;
   }
 }
@@ -81,6 +113,9 @@
 @media (min-width: @desktop-width) {
   .intro {
     max-width: 1220px;
+    height: 470px;
+
+    margin-top: 50px;
   }
 
   .intro__first-screen {
@@ -88,6 +123,31 @@
   }
 
   .intro__button {
+    margin-top: 53px;
     margin-left: 80px;
+  }
+
+  .intro__img {
+    z-index: 1;
+    top: -80px;
+    left: auto;
+    right: 217px;
+  }
+
+  .intro__desktop-substrate {
+    display: block;
+
+    position: absolute;
+    top: -223px;
+    right: -110px;
+    z-index: -1;
+
+    width: 720px;
+    height: 696px;
+
+    background-color: @bg-color-green;
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
   }
 }

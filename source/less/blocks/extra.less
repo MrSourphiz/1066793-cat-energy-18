@@ -8,10 +8,19 @@
   line-height: 1;
   font-weight: 400;
   color: @font-color-black;
+
+  padding-bottom: 33px;
+
+  border-bottom: @border;
+
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .extra__list {
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 38px;
 }
 
 .additional-list {
@@ -19,7 +28,7 @@
 }
 
 .additional-list__item {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   border-bottom: @border;
 }
 
@@ -29,17 +38,27 @@
   line-height: 1;
   text-transform: @text-transform;
   color: @font-color-black;
+
+  margin-top: 13px;
+  margin-bottom: 11px;
 }
 
 .additional-list__table {
+  width: 280px;
+
   font-family: @additional-font;
   font-size: 14px;
   line-height: 1;
   color: @font-color-grey;
 }
 
+.additional-list__value {
+  text-align: right;
+}
+
 .additional-list__order-button {
   .mobile-button-green();
+  margin-top: 12px;
 }
 
 .stock {
@@ -51,6 +70,8 @@
   background-color: @bg-color-green;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  margin-bottom: 35px;
 }
 
 .stock__logo {
@@ -58,14 +79,21 @@
   height: 60px;
 
   fill: #ffffff;
+
+  margin-top: 65px;
+  margin-bottom: 56px;
 }
 
 .stock__txt {
+  width: 160px;
+
   font-family: @additional-font;
   font-size: 16px;
   line-height: 1.25;
 
   color: @font-color-white;
+
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,8 +103,47 @@
   }
 
   .extra__title {
+    position: relative;
+
     font-size: 36px;
     line-height: 1;
+
+    padding-bottom: 0;
+
+    border: none;
+
+    margin-bottom: 77px;
+    margin-left: 37px;
+  }
+
+  .extra__title::before {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    left: -67px;
+
+    width: 28px;
+    height: 3px;
+
+    background-color: @bg-color-green;
+  }
+
+  .extra__title::after {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    right: -30px;
+
+    width: 327px;
+    height: 3px;
+
+    background-color: @bg-color-green;
+  }
+
+  .extra__list {
+    margin-bottom: 70px;
   }
 
   .additional-list__item {
@@ -85,29 +152,40 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
 
-  .additional-list__item:first-child {
-    border-top: @border;
+    padding-bottom: 25px;
+
+    border: @border;
   }
 
   .additional-list__title {
     font-size: 20px;
     line-height: 1;
+
+    margin-top: 25px;
+    margin-bottom: 27px;
     margin-left: 38px;
   }
 
   .additional-list__table {
     font-size: 16px;
     line-height: 1.25;
-    margin-right: 37px;
+    margin-right: 32px;
+  }
+
+  .additional-list__field {
+    width: 150px;
+    text-align: right;
+  }
+
+  .additional-list__value {
+    width: 75px;
   }
 
   .additional-list__order-button {
     .tablet-button-green();
     width: 633px;
-    margin-left: 38px;
-    margin-right: 37px;
+    margin: 0 auto;
   }
 
   .stock {
@@ -118,15 +196,22 @@
 
     width: 708px;
     height: 199px;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+
+    margin-bottom: 76px;
   }
 
   .stock__logo {
+    margin-top: 49px;
     margin-left: 91px;
   }
 
   .stock__txt {
     width: 160px;
     text-align: left;
+    margin-top: 7px;
     margin-right: 125px;
   }
 }
@@ -135,7 +220,26 @@
   .extra {
     max-width: 1220px;
     margin: 0 auto;
-    margin-bottom: 86px;
+    margin-bottom: 5px;
+  }
+
+  .extra__title {
+    margin-bottom: 80px;
+    margin-left: 0;
+  }
+
+  .extra__title::before {
+    top: 22px;
+    left: -110px;
+
+    width: 70px;
+  }
+
+  .extra__title::after {
+    top: 22px;
+    right: -110px;
+
+    width: 957px;
   }
 
   .extra__wrapper {
@@ -149,8 +253,37 @@
     margin-right: 80px;
   }
 
+  .additional-list__item {
+    justify-content: flex-start;
+
+    height: 71px;
+
+    padding-bottom: 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
   .additional-list__title {
+    width: 245px;
     margin: 0;
+  }
+
+  .additional-list__table {
+    margin-right: 45px;
+    margin-left: 80px;
+  }
+
+  .additional-list__row {
+    width: 285px;
+  }
+
+  .additional-list__field {
+    text-align: left;
+  }
+
+  .additional-list__value {
+    text-align: right;
   }
 
   .additional-list__order-button {
@@ -165,10 +298,14 @@
     justify-content: space-around;
     width: 245px;
     height: 289px;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .stock__logo {
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .stock__txt {

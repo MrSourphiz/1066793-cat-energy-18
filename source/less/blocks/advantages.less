@@ -1,6 +1,7 @@
-.advantages {
+.advantages__wrapper {
   max-width: 280px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .advantages__title {
@@ -9,11 +10,14 @@
   line-height: 1.67;
   font-weight: 400;
   color: @font-color-black;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .advantages__list {
   list-style: @list-style;
   padding: 0;
+  margin: 0;
 }
 
 .advantages__item {
@@ -23,13 +27,17 @@
   margin-top: 20px;
 }
 
+.advantages__item:first-child {
+  margin-top: 0;
+}
+
 .advantages__img {
   width: 50px;
   height: 50px;
 
   background-color: @bg-color-green;
 
-  padding: 10px;
+  padding: 5px;
 
   margin-right: 20px;
 }
@@ -45,34 +53,84 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
+    border-bottom: @border;
+  }
+
+  .advantages__wrapper {
     max-width: 708px;
 
     margin: 0 auto;
+    margin-top: 45px;
   }
 
   .advantages__title {
     font-size: 60px;
     line-height: 1;
+
+    margin-bottom: 0;
+    margin-left: 3px;
   }
 
   .advantages__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding-bottom: 41px;
   }
 
   .advantages__item {
-    flex-direction: column;
-    max-width: 339px;
+    position: relative;
 
-    margin-right: 30px;
+    flex-direction: column;
+    max-width: 245px;
+    height: 230px;
+
+    margin-top: 72px;
+    margin-right: 140px;
+    margin-bottom: 15px;
+  }
+
+  .advantages__item:first-child {
+    margin-top: 72px;
   }
 
   .advantages__item:nth-child(2n) {
     margin-right: 0;
   }
 
+  .advantages__item::after {
+    content: "1";
+
+    position: absolute;
+    top: -35px;
+    right: 0;
+
+    font-family: @additional-font;
+    font-size: 281px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__item:nth-child(2)::after {
+    content: "2";
+  }
+
+  .advantages__item:nth-child(3)::after {
+    content: "3";
+  }
+
+  .advantages__item:nth-child(4)::after {
+    content: "4";
+  }
+
+  .advantages__img {
+    padding: 15px;
+    margin-bottom: 33px;
+  }
+
   .advantages__description {
+    z-index: 2;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -80,13 +138,25 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
+    border-bottom: none;
+  }
+
+  .advantages__wrapper {
     max-width: 1220px;
+
+    margin-top: 72px;
   }
 
   .advantages__item {
     max-width: 245px;
 
+    margin-top: 73px;
     margin-right: 80px;
+    margin-bottom: 40px;
+  }
+
+  .advantages__item:first-child {
+    margin-top: 73px;
   }
 
   .advantages__item:nth-child(2n) {

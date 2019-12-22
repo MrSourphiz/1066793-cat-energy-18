@@ -37,6 +37,16 @@
 
   padding-top: 11px;
   padding-bottom: 11px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .mobile-button-grey() {
@@ -56,6 +66,16 @@
 
   padding-top: 11px;
   padding-bottom: 11px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .tablet-button-green() {
@@ -73,8 +93,18 @@
 
   background-color: @bg-color-green;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog-button-green() {
@@ -94,6 +124,16 @@
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog-button-grey() {
@@ -113,6 +153,16 @@
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .fieldset-border() {
@@ -132,12 +182,16 @@
   list-style: @list-style;
 
   padding: 0;
+  margin: 0;
 }
 
 .program-labels() {
+  height: 19px;
   font-family: @main-font;
   font-size: 16px;
   line-height: 1.15;
   text-transform: @text-transform;
   color: @font-color-black;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
