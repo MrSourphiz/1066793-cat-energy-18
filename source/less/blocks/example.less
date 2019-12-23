@@ -292,20 +292,43 @@
   }
 
   .example__slider-item {
+    display: block;
+
     position: absolute;
     top: -160px;
+
+    height: 517px;
+
+    overflow: hidden;
+  }
+
+  .example__photo-before {
+    z-index: 20;
+    left: 0;
+
+    width: 690px;
+  }
+
+  .example__photo-after {
+    z-index: 10;
+    right: 0;
+
+    width: 690px;
+  }
+
+  .example__slider-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
   }
 
   .example__slider-image--before {
-    z-index: 20;
-    width: 677px;
-    height: 499px;
+    object-position: left;
   }
 
   .example__slider-image--after {
-    z-index: 10;
-    width: 545px;
-    height: 517px;
+    object-position: right;
   }
 
   .range-controls {
@@ -328,7 +351,6 @@
   }
 
   .range-controls__toggle {
-    position: relative;
     width: 428px;
     height: 6px;
     background-color: #dcdcdc;
@@ -346,11 +368,11 @@
   }
 
   .range-controls__bar {
-    position: absolute;
+    cursor: pointer;
+
+    position: relative;
     top: -14px;
     left: 0;
-
-    cursor: pointer;
 
     width: 32px;
     height: 32px;
