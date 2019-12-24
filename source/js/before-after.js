@@ -42,4 +42,4 @@ var resizeImage = function (value) {
 
   var togglePositionRel = parseInt(value / (scaleWidth - thumbWidth) * 100);
   photoBefore.style.width = 100 - togglePositionRel + "%";
- };
+};
