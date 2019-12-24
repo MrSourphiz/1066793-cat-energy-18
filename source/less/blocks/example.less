@@ -292,20 +292,46 @@
   }
 
   .example__slider-item {
+    display: block;
+
     position: absolute;
     top: -160px;
+
+    height: 517px;
+
+    overflow: hidden;
+  }
+
+  .example__photo-before {
+    z-index: 20;
+    left: 0;
+
+    width: 690px;
+  }
+
+  .example__photo-after {
+    z-index: 10;
+    right: 0;
+
+    width: 690px;
+  }
+
+  .example__slider-image {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(#ffffff 31.5%, #f2f2f2 31.5%);
+
+    object-fit: cover;
   }
 
   .example__slider-image--before {
-    z-index: 20;
-    width: 677px;
-    height: 499px;
+    width: 100%;
+    object-position: left;
   }
 
   .example__slider-image--after {
-    z-index: 10;
-    width: 545px;
-    height: 517px;
+    object-position: right;
   }
 
   .range-controls {
@@ -328,7 +354,6 @@
   }
 
   .range-controls__toggle {
-    position: relative;
     width: 428px;
     height: 6px;
     background-color: #dcdcdc;
@@ -346,11 +371,11 @@
   }
 
   .range-controls__bar {
-    position: absolute;
+    cursor: pointer;
+
+    position: relative;
     top: -14px;
     left: 0;
-
-    cursor: pointer;
 
     width: 32px;
     height: 32px;
@@ -391,6 +416,15 @@
   .range-controls__bar:active::after {
     top: 11px;
     left: 11px;
+  }
+
+  .slide-1:checked ~ .example__slider-list .example__slider-item:nth-child(1) {
+    display: block;
+  }
+
+  .slide-2:checked ~ .example__slider-list .example__slider-item:nth-child(2) {
+    display: block;
+    z-index: 30;
   }
 
   .slide-1:checked ~ .example__controls .range-controls__bar {

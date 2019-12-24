@@ -150,7 +150,7 @@
               <div class="example__controls range-controls">
                 <div class="range-controls__wrapper">
                   <label class="slide-contols__prev range-controls__txt" for="slide-1">Было</label>
-                  <div class="range-controls__toggle">
+                  <div id="toggle" class="range-controls__toggle">
                     <div class="range-controls__bar"></div>
                   </div>
                   <label class="slide-contols__next range-controls__txt" for="slide-2">Стало</label>
@@ -265,21 +265,7 @@
         </div>
       </div>
     </footer>
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navButton = document.querySelector('.main-nav__button');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navButton.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-          } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-          }
-        });
-    </script>
+    <script src="js/main-nav.js"></script>
+    <script src="js/before-after.js"></script>
   </body>
 </html>
