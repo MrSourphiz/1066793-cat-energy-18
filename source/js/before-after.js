@@ -1,6 +1,8 @@
 let thumb = toggle.querySelector('.range-controls__bar');
+let scale = document.querySelector('.range-controls__toggle');
 let photoBefore = document.querySelector('.example__photo-before');
-let photoAfter = document.querySelector('.example__photo-after');
+let scaleWidth = scale.offsetWidth;
+let thumbWidth = thumb.offsetWidth;
 
 thumb.onmousedown = function(event) {
   event.preventDefault();
@@ -22,7 +24,7 @@ thumb.onmousedown = function(event) {
     }
 
     thumb.style.left = newLeft + 'px';
-    photoBefore.style.width = 1.7 * newLeft + 'px';
+    resizeImage(newLeft);
   }
 
   function onMouseUp() {
@@ -35,3 +37,9 @@ thumb.onmousedown = function(event) {
 thumb.ondragstart = function() {
   return false;
 };
+
+var resizeImage = function (value) {
+
+  var togglePositionRel = parseInt(value / (scaleWidth - thumbWidth) * 100);
+  photoBefore.style.width = 100 - togglePositionRel + "%";
+ };

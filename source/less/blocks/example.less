@@ -320,10 +320,13 @@
     width: 100%;
     height: 100%;
 
+    background: linear-gradient(#ffffff 31.5%, #f2f2f2 31.5%);
+
     object-fit: cover;
   }
 
   .example__slider-image--before {
+    width: 100%;
     object-position: left;
   }
 
@@ -413,6 +416,15 @@
   .range-controls__bar:active::after {
     top: 11px;
     left: 11px;
+  }
+
+  .slide-1:checked ~ .example__slider-list .example__slider-item:nth-child(1) {
+    display: block;
+  }
+
+  .slide-2:checked ~ .example__slider-list .example__slider-item:nth-child(2) {
+    display: block;
+    z-index: 30;
   }
 
   .slide-1:checked ~ .example__controls .range-controls__bar {
