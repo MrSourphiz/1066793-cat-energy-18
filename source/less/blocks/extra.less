@@ -201,6 +201,11 @@
     background-repeat: no-repeat;
 
     margin-bottom: 76px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   .stock__logo {
@@ -301,6 +306,7 @@
 
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 245px auto;
   }
 
   .stock__logo {
