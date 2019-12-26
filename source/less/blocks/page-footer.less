@@ -6,25 +6,27 @@
 }
 
 .page-footer__link {
+  display: block;
   margin: 0 auto;
 }
 
 .page-footer__logo {
+  cursor: pointer;
+
   width: 128px;
+  height: 24px;
   padding-top: 39px;
   padding-bottom: 31px;
-}
 
-.page-footer__logo--black {
   fill: #111111;
 }
 
-.page-footer__link:hover .page-footer__logo--black,
-.page-footer__link:focus .page-footer__logo--black {
+.page-footer__link:hover .page-footer__logo,
+.page-footer__link:focus .page-footer__logo {
   fill: rgba(17, 17, 17, 0.8);
 }
 
-.page-footer__link:active .page-footer__logo--black {
+.page-footer__link:active .page-footer__logo {
   fill: rgba(17, 17, 17, 0.6);
 }
 
