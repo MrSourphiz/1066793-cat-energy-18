@@ -152,28 +152,10 @@
   border-bottom: @border;
 }
 
-.site-list__item--current .site-list__link {
-  border-bottom: 2px solid #68b738;
-}
-
 .site-list__link {
   color: @font-color-black;
   text-decoration: @text-decoration;
   cursor: pointer;
-}
-
-.site-list__link:hover,
-.site-list__link:focus {
-  color: rgba(17, 17, 17, 0.6);
-}
-
-.site-list__link:disabled {
-  color: rgba(17, 17, 17, 0.3);
-}
-
-.site-list__link:active {
-  color: @font-color-black;
-  border-bottom: 2px solid #68b738;
 }
 
 @media (min-width: @tablet-width) {
@@ -229,6 +211,24 @@
 
   .site-list__item:last-child {
     margin-right: 0;
+  }
+
+  .site-list__item--current .site-list__link {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .site-list__link:hover,
+  .site-list__link:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  .site-list__link:disabled {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  .site-list__link:active {
+    color: @font-color-black;
+    border-bottom: 2px solid #68b738;
   }
 }
 

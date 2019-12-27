@@ -1,5 +1,6 @@
 .catalog {
   max-width: 320px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -40,11 +41,14 @@
 }
 
 .product-list__img {
+  z-index: -1;
+
   position: absolute;
   top: 0;
   left: 23px;
 
-  z-index: -1;
+  width: 140px;
+  height: 144px;
 }
 
 .product-list__wrapper {
@@ -128,7 +132,6 @@
 @media (min-width: @tablet-width) {
   .catalog {
     max-width: 708px;
-    margin: 0 auto;
   }
 
   .catalog__title {
@@ -181,10 +184,13 @@
   }
 
   .product-list__img {
+    z-index: 1;
+
     top: -47px;
     left: 0;
 
-    z-index: 1;
+    width: auto;
+    height: auto;
   }
 
   .product-list__img--big {
