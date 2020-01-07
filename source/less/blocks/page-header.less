@@ -186,6 +186,7 @@
   .main-nav--opened .site-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     margin: 0;
   }
@@ -197,8 +198,8 @@
     line-height: 1.38;
     font-weight: 400;
 
-    padding-top: 40px;
-    padding-bottom: 75px;
+    padding-top: 43px;
+    padding-bottom: 72px;
 
     border: none;
 
@@ -207,6 +208,10 @@
 
   .site-list__item:last-child {
     margin-right: 0;
+  }
+
+  .site-list__link {
+    padding-bottom: 6px;
   }
 
   .site-list__item--current .site-list__link {
@@ -252,7 +257,9 @@
   .site-list__item {
     font-size: 20px;
     line-height: 1.24;
+
     padding-top: 73px;
+    padding-bottom: 75px;
   }
 
   .site-list--index .site-list__item--current .site-list__link {
