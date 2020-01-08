@@ -80,7 +80,7 @@
   }
 }
 
-.tablet-button-green() {
+.tablet-button-green-small() {
   display: block;
   width: 245px;
   height: 20px;
@@ -97,6 +97,35 @@
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.tablet-button-green() {
+  display: block;
+  width: 245px;
+  height: 20px;
+
+  font-family: @main-font;
+  font-size: 20px;
+  line-height: 1;
+  text-align: @text-align;
+  text-decoration: @text-decoration;
+  text-transform: @text-transform;
+  color: @font-color-white;
+
+  background-color: @bg-color-green;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   &:hover,
   &:focus {

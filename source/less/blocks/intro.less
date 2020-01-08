@@ -4,9 +4,13 @@
   font-family: @main-font;
   font-size: 20px;
   line-height: 1;
+
+  margin: 0 auto;
 }
 
 .intro__first-screen {
+  position: relative;
+  max-width: 320px;
   height: 277px;
 
   text-align: @text-align;
@@ -43,8 +47,10 @@
 
 .intro__img {
   position: absolute;
-  top: 167px;
+
+  top: 165px;
   left: 20px;
+
   width: 280px;
   height: 270px;
 }
@@ -63,8 +69,6 @@
   .intro {
     max-width: 708px;
     height: 805px;
-
-    margin: 0 auto;
   }
 
   .intro__first-screen {
@@ -100,8 +104,10 @@
 
   .intro__img {
     z-index: -1;
+
     top: 200px;
-    left: 2px;
+    left: -90px;
+
     width: 709px;
     height: 609px;
   }
@@ -133,9 +139,11 @@
 
   .intro__img {
     z-index: 1;
+
     top: -80px;
     left: auto;
-    right: 217px;
+    right: -497px;
+
     width: 552px;
     height: 499px;
   }

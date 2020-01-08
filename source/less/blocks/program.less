@@ -1,3 +1,8 @@
+.program {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .program__title {
   width: 280px;
 
@@ -6,8 +11,6 @@
   line-height: 1.67;
   font-weight: 400;
   color: @font-color-black;
-
-  padding: 0 20px;
 
   margin-top: 16px;
   margin-bottom: 24px;
@@ -21,8 +24,6 @@
   line-height: 1.3;
   text-transform: @text-transform;
   color: @font-color-black;
-
-  padding: 0 20px;
 
   margin-top: 0;
   margin-bottom: 39px;
@@ -40,7 +41,6 @@
 .additional-filter__list {
   .ul-config();
   width: 280px;
-  padding: 0 20px;
 }
 
 .cat-info__list {
@@ -110,12 +110,12 @@
 .cat-info__filter {
   border-bottom: @border;
 
-  margin-top: 23px;
+  margin-top: 26px;
   margin-bottom: 28px;
 }
 
 .cat-info__filter-item {
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .cat-info__filter-item:last-child {
@@ -135,8 +135,8 @@
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: -49px;
+  top: 9px;
+  left: -42px;
 
   width: 29px;
   height: 29px;
@@ -150,8 +150,8 @@
 
   content: "";
   position: absolute;
-  top: 19px;
-  left: -39px;
+  top: 18px;
+  left: -32px;
 
   width: 12px;
   height: 12px;
@@ -183,7 +183,6 @@
 .additional-filter__title {
   .legend-config();
   width: 280px;
-  padding: 0 20px;
 }
 
 .owner-info__title {
@@ -196,7 +195,7 @@
 
   position: absolute;
   top: 14px;
-  right: 0;
+  right: -20px;
 
   width: 99px;
   height: 3px;
@@ -271,7 +270,6 @@
 
 .about-cat {
   width: 280px;
-  padding: 0 20px;
   margin-bottom: 25px;
 }
 
@@ -310,15 +308,14 @@
 .additional-filter__title {
   position: relative;
   padding: 0;
-  padding-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .additional-filter__title::after {
   content: "";
 
   position: absolute;
-  top: 14px;
+  top: 17px;
   right: -20px;
 
   width: 136px;
@@ -327,11 +324,11 @@
 }
 
 .additional-filter__item {
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 }
 
 .additional-filter__item:last-child {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .additional-filter__checkbox {
@@ -347,8 +344,8 @@
   content: "";
 
   position: absolute;
-  top: 11px;
-  left: -48px;
+  top: 8px;
+  left: -40px;
 
   width: 28px;
   height: 28px;
@@ -361,8 +358,8 @@
   display: none;
 
   position: absolute;
-  top: 14px;
-  left: -43px;
+  top: 11px;
+  left: -36px;
 
   width: 20px;
   height: 12px;
@@ -537,7 +534,7 @@
   }
 
   .cat-info__filter-item {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .cat-info__label--filter {
@@ -545,16 +542,16 @@
   }
 
   .cat-info__label--filter::before {
-    top: 11px;
-    left: -63px;
+    top: 12px;
+    left: -57px;
 
     width: 38px;
     height: 38px;
   }
 
   .cat-info__label--filter::after {
-    top: 22px;
-    left: -52px;
+    top: 23px;
+    left: -45px;
 
     width: 18px;
     height: 18px;
@@ -584,7 +581,7 @@
 
   .owner-info__title::after {
     top: 22px;
-    right: -30px;
+    right: -72px;
 
     width: 145px;
     height: 3px;
@@ -632,7 +629,7 @@
 
   .about-cat {
     padding: 0;
-    margin-bottom: 61px;
+    margin-bottom: 63px;
   }
 
   .about-cat__title {
@@ -659,7 +656,7 @@
 
   .about-cat__title::after {
     top: 22px;
-    right: -30px;
+    right: -72px;
 
     width: 479px;
     height: 3px;
@@ -683,7 +680,7 @@
     padding: 0;
     padding-left: 41px;
 
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   .additional-filter__title::before {
@@ -701,7 +698,7 @@
 
   .additional-filter__title::after {
     top: 22px;
-    right: -30px;
+    right: -71px;
 
     width: 446px;
     height: 3px;
@@ -711,16 +708,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 
-    width: 528px;
+    width: 550px;
 
     padding: 0;
   }
 
   .additional-filter__item {
     text-align: left;
-    margin-right: 60px;
+    margin-right: 135px;
     margin-bottom: 50px;
   }
 
@@ -728,12 +724,20 @@
     margin-right: 0;
   }
 
-  .additional-filter__item:nth-child(4) {
-    margin-right: 38px;
+  .additional-filter__item:nth-child(3) {
+    margin-right: 229px;
   }
 
   .additional-filter__label {
     margin-left: 32px;
+  }
+
+  .additional-filter__item:nth-child(1) .additional-filter__label {
+    margin-left: 40px;
+  }
+
+  .additional-filter__item:nth-child(3) .additional-filter__label {
+    margin-left: 40px;
   }
 
   .additional-filter__label::before {
@@ -756,7 +760,7 @@
     display: flex;
     flex-direction: row;
     width: 708px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 72px;
     margin-left: 41px;
   }
@@ -846,7 +850,7 @@
   }
 
   .cat-info__filter-item {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .cat-info__label--filter::before {
@@ -925,7 +929,7 @@
   }
 
   .about-cat {
-    margin-bottom: 64px;
+    margin-bottom: 65px;
   }
 
   .about-cat__title {
@@ -955,6 +959,7 @@
   .additional-filter__title {
     width: 1220px;
     padding-left: 0;
+    margin-bottom: 67px;
   }
 
   .additional-filter__title::before {
@@ -972,12 +977,59 @@
   }
 
   .additional-filter__list {
-    width: 1110px;
+    width: 1220px;
+  }
+
+  .additional-filter__item {
+    text-align: left;
+    margin-right: 115px;
+    margin-bottom: 50px;
+  }
+
+  .additional-filter__item:nth-child(2n) {
+    margin-right: 180px;
+  }
+
+  .additional-filter__item:nth-child(3) {
+    margin-right: 210px;
+  }
+
+  .additional-filter__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .additional-filter__label {
+    margin-left: 32px;
+  }
+
+  .additional-filter__item:nth-child(1) .additional-filter__label {
+    margin-left: 42px;
+  }
+
+  .additional-filter__item:nth-child(3) .additional-filter__label {
+    margin-left: 0;
+  }
+
+  .additional-filter__label::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: -59px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .additional-filter__label::after {
+    top: 17px;
+    left: -49px;
   }
 
   .program__other {
     width: 1220px;
-    margin-top: 17px;
+    margin-top: 21px;
+    margin-bottom: 82px;
     margin-left: 0;
   }
 

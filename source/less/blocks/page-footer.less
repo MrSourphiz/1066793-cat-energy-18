@@ -1,12 +1,13 @@
 .page-footer {
   width: 100%;
   background-color: @bg-color-grey;
-
-  text-align: center;
 }
 
 .page-footer__link {
   display: block;
+  max-width: 280px;
+  text-align: center;
+
   margin: 0 auto;
 }
 
@@ -32,6 +33,7 @@
 
 .page-footer__social {
   max-width: 280px;
+  height: 62px;
 
   padding-left: 0;
   margin: 0 auto;
@@ -44,13 +46,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
   list-style: @list-style;
-}
-
-.social__item {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .social__item:nth-child(2) {
@@ -71,13 +69,28 @@
   fill: rgba(104, 183, 56, 0.3);
 }
 
+.social__icon--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.social__icon--instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.social__icon--facebook {
+  width: 10px;
+  height: 19px;
+}
+
 .copyright__link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  max-width: 280px;
+  width: 280px;
   height: 78px;
 
   text-decoration: none;
@@ -94,18 +107,19 @@
   color: @font-color-grey;
 }
 
-.copyright__logo {
-  width: 27px;
-  height: 34px;
+.copyright__icon {
+  width: 41px;
+  height: 52px;
+
   fill: #666666;
 }
 
-.copyright__link:hover .copyright__logo,
-.copyright__link:focus .copyright__logo {
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
   fill: #68b738;
 }
 
-.copyright__link:active .copyright__logo {
+.copyright__link:active .copyright__icon {
   fill: rgba(104, 183, 56, 0.3);
 }
 
@@ -133,6 +147,8 @@
   }
 
   .page-footer__social {
+    max-width: 125px;
+    padding-left: 17px;
     border: none;
   }
 
@@ -140,17 +156,33 @@
     margin-right: 29px;
   }
 
+  .social__item:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .social__item:last-child {
     margin-right: 0;
   }
 
-  .copyright__link {
-    justify-content: none;
-    margin: 0;
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
   }
 
-  .copyright__text {
-    margin-right: 23px;
+  .social__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .copyright__link {
+    width: 162px;
+    margin: 0;
   }
 }
 
