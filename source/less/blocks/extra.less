@@ -15,7 +15,7 @@
 
   border-bottom: @border;
 
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -52,6 +52,9 @@
 }
 
 .additional-list__title {
+  max-width: 280px;
+  word-break: break-all;
+
   font-family: @main-font;
   font-size: 16px;
   line-height: 1;
@@ -82,7 +85,8 @@
 
 .stock {
   width: 280px;
-  height: 289px;
+  min-height: 289px;
+  height: auto;
 
   text-align: @text-align;
 
@@ -219,7 +223,7 @@
     justify-content: space-between;
 
     width: 708px;
-    height: 199px;
+    min-height: 199px;
 
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -274,6 +278,7 @@
   .extra__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .additional-list {
@@ -285,7 +290,7 @@
   .additional-list__item {
     justify-content: flex-start;
 
-    height: 71px;
+    min-height: 71px;
 
     padding-bottom: 0;
 
@@ -326,7 +331,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 245px;
-    height: 289px;
+    min-height: 289px;
 
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;

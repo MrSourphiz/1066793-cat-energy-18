@@ -33,7 +33,7 @@
 
 .page-footer__social {
   max-width: 280px;
-  height: 62px;
+  min-height: 62px;
 
   padding-left: 0;
   margin: 0 auto;
@@ -45,6 +45,7 @@
 .social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -58,6 +59,10 @@
 
 .social__item:last-child {
   padding-right: 0;
+}
+
+.social__icon {
+  fill: #666666;
 }
 
 .social__link:hover .social__icon,
@@ -87,11 +92,12 @@
 .copyright__link {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   width: 280px;
-  height: 78px;
+  min-height: 78px;
 
   text-decoration: none;
 
@@ -105,6 +111,8 @@
   font-size: 16px;
   line-height: 1;
   color: @font-color-grey;
+
+  margin: 0;
 }
 
 .copyright__icon {
@@ -129,16 +137,17 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    height: 150px;
+    min-height: 150px;
   }
 
   .page-footer__wrap {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 
     max-width: 708px;
-    height: 150px;
+    min-height: 150px;
     margin: 0 auto;
   }
 

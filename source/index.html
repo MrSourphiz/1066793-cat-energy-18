@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
@@ -112,7 +113,7 @@
                   <p class="example__txt">5 кг</p>
                   <p class="example__txt">60 дней</p>
                 </div>
-                <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
+                <p class="example__expenses">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
               </div>
             </div>
             <div class="example__toggle-block slider">
@@ -159,7 +160,10 @@
       <section class="contacts">
         <div class="contacts__wraper">
           <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="contacts__wrap">
           <iframe class="contacts__iframe" src="https://yandex.com/map-widget/v1/-/CGtZVQID" width="560" height="400"></iframe>
@@ -203,7 +207,7 @@
         </ul>
 
         <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/18" aria-label="Перейти на сайт HTML Academy">
-          <span class="copyright__text">HTML Academy</span>
+          <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__icon" width="41" height="52"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
         </a>
       </div>

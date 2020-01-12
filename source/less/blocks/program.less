@@ -110,16 +110,16 @@
 .cat-info__filter {
   border-bottom: @border;
 
-  margin-top: 26px;
+  margin-top: 24px;
   margin-bottom: 28px;
 }
 
 .cat-info__filter-item {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .cat-info__filter-item:last-child {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .cat-info__radio {
@@ -128,15 +128,15 @@
 
 .cat-info__label--filter {
   position: relative;
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 .cat-info__label--filter::before {
   content: "";
 
   position: absolute;
-  top: 9px;
-  left: -42px;
+  top: 7px;
+  left: -47px;
 
   width: 29px;
   height: 29px;
@@ -150,8 +150,8 @@
 
   content: "";
   position: absolute;
-  top: 18px;
-  left: -32px;
+  top: 17px;
+  left: -37px;
 
   width: 12px;
   height: 12px;
@@ -195,7 +195,7 @@
 
   position: absolute;
   top: 14px;
-  right: -20px;
+  right: -17px;
 
   width: 99px;
   height: 3px;
@@ -308,14 +308,14 @@
 .additional-filter__title {
   position: relative;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 37px;
 }
 
 .additional-filter__title::after {
   content: "";
 
   position: absolute;
-  top: 17px;
+  top: 13px;
   right: -20px;
 
   width: 136px;
@@ -324,11 +324,11 @@
 }
 
 .additional-filter__item {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .additional-filter__item:last-child {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .additional-filter__checkbox {
@@ -345,7 +345,7 @@
 
   position: absolute;
   top: 8px;
-  left: -40px;
+  left: -47px;
 
   width: 28px;
   height: 28px;
@@ -359,7 +359,7 @@
 
   position: absolute;
   top: 11px;
-  left: -36px;
+  left: -43px;
 
   width: 20px;
   height: 12px;
@@ -520,12 +520,12 @@
   }
 
   .cat-info__filter {
-    width: 562px;
-    height: 159px;
+    width: 542px;
+    min-height: 159px;
 
     padding: 0;
     padding-top: 33px;
-    padding-left: 66px;
+    padding-left: 86px;
 
     border: @border;
 
@@ -534,7 +534,12 @@
   }
 
   .cat-info__filter-item {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
+  }
+
+  .cat-info__radio {
+    position: absolute;
+    left: -99999px;
   }
 
   .cat-info__label--filter {
@@ -543,15 +548,15 @@
 
   .cat-info__label--filter::before {
     top: 12px;
-    left: -57px;
+    left: -60px;
 
     width: 38px;
     height: 38px;
   }
 
   .cat-info__label--filter::after {
-    top: 23px;
-    left: -45px;
+    top: 22px;
+    left: -49px;
 
     width: 18px;
     height: 18px;
@@ -581,7 +586,7 @@
 
   .owner-info__title::after {
     top: 22px;
-    right: -72px;
+    right: -30px;
 
     width: 145px;
     height: 3px;
@@ -629,7 +634,7 @@
 
   .about-cat {
     padding: 0;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .about-cat__title {
@@ -656,7 +661,7 @@
 
   .about-cat__title::after {
     top: 22px;
-    right: -72px;
+    right: -30px;
 
     width: 479px;
     height: 3px;
@@ -687,7 +692,7 @@
     content: "";
 
     position: absolute;
-    top: 22px;
+    top: 23px;
     left: -30px;
 
     width: 30px;
@@ -697,8 +702,8 @@
   }
 
   .additional-filter__title::after {
-    top: 22px;
-    right: -71px;
+    top: 23px;
+    right: -30px;
 
     width: 446px;
     height: 3px;
@@ -716,7 +721,7 @@
 
   .additional-filter__item {
     text-align: left;
-    margin-right: 135px;
+    margin-right: 126px;
     margin-bottom: 50px;
   }
 
@@ -725,7 +730,7 @@
   }
 
   .additional-filter__item:nth-child(3) {
-    margin-right: 229px;
+    margin-right: 220px;
   }
 
   .additional-filter__label {
@@ -733,11 +738,11 @@
   }
 
   .additional-filter__item:nth-child(1) .additional-filter__label {
-    margin-left: 40px;
+    margin-left: 35px;
   }
 
   .additional-filter__item:nth-child(3) .additional-filter__label {
-    margin-left: 40px;
+    margin-left: 35px;
   }
 
   .additional-filter__label::before {
@@ -760,7 +765,7 @@
     display: flex;
     flex-direction: row;
     width: 708px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 72px;
     margin-left: 41px;
   }
@@ -820,7 +825,7 @@
   .cat-info__input {
     padding-top: 10px;
     padding-bottom: 12px;
-    padding-left: 19px;
+    padding-left: 20px;
 
     margin-left: 15px;
     margin-bottom: 18px;
@@ -832,10 +837,12 @@
 
   .cat-info__item:nth-child(2) .cat-info__input {
     width: 460px;
+    padding-left: 24px;
   }
 
   .cat-info__item:nth-child(3) .cat-info__input {
     width: 417px;
+    padding-left: 21px;
   }
 
   .cat-info__filter {
@@ -850,7 +857,12 @@
   }
 
   .cat-info__filter-item {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+  }
+
+  .cat-info__radio {
+    position: absolute;
+    left: -99999px;
   }
 
   .cat-info__label--filter::before {
@@ -863,11 +875,6 @@
     left: -49px;
   }
 
-  .cat-info__radio {
-    position: absolute;
-    left: -99999px;
-  }
-
   .cat-info__list,
   .owner-info__list,
   .additional-filter__list {
@@ -877,6 +884,7 @@
   .owner-info__title {
     width: 1220px;
     padding-left: 0;
+    margin-bottom: 76px;
   }
 
   .owner-info__title::before {
@@ -896,7 +904,11 @@
   .owner-info__list {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    width: 1220px;
+
+    margin-bottom: 49px;
   }
 
   .owner-info__item {
@@ -910,6 +922,7 @@
   .owner-info__item:first-child .owner-info__input {
     width: 465px;
     padding-left: 19px;
+    margin-left: 0;
   }
 
   .owner-info__item:nth-child(2) .owner-info__input {
@@ -959,10 +972,11 @@
   .additional-filter__title {
     width: 1220px;
     padding-left: 0;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   .additional-filter__title::before {
+    top: 20px;
     left: -110px;
 
     width: 70px;
@@ -970,6 +984,7 @@
   }
 
   .additional-filter__title::after {
+    top: 20px;
     right: -110px;
 
     width: 1078px;
@@ -982,16 +997,16 @@
 
   .additional-filter__item {
     text-align: left;
-    margin-right: 115px;
+    margin-right: 109px;
     margin-bottom: 50px;
   }
 
   .additional-filter__item:nth-child(2n) {
-    margin-right: 180px;
+    margin-right: 171px;
   }
 
   .additional-filter__item:nth-child(3) {
-    margin-right: 210px;
+    margin-right: 202px;
   }
 
   .additional-filter__item:nth-child(4n) {
@@ -1003,7 +1018,7 @@
   }
 
   .additional-filter__item:nth-child(1) .additional-filter__label {
-    margin-left: 42px;
+    margin-left: 35px;
   }
 
   .additional-filter__item:nth-child(3) .additional-filter__label {
@@ -1028,7 +1043,7 @@
 
   .program__other {
     width: 1220px;
-    margin-top: 21px;
+    margin-top: 17px;
     margin-bottom: 82px;
     margin-left: 0;
   }
@@ -1038,6 +1053,6 @@
   }
 
   .program__additional-txt {
-    margin-left: 80px;
+    margin-left: 84px;
   }
 }
