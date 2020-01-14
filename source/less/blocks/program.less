@@ -170,11 +170,11 @@
   display: block;
 }
 
-.cat-info__radio:disabled + .cat-info__label--filter::before {
+.cat-info__radio:active + .cat-info__label--filter::before {
   border-color: rgba(188, 188, 188, 0.3);
 }
 
-.cat-info__radio:disabled + .cat-info__label--filter::after {
+.cat-info__radio:active + .cat-info__label--filter::after {
   background-color: rgba(104, 183, 56, 0.3);
 }
 
@@ -379,12 +379,12 @@
   border-color: #bababa;
 }
 
-.additional-filter__checkbox:disabled + .additional-filter__label::before {
+.additional-filter__checkbox:active + .additional-filter__label::before {
   border-color: rgba(186, 186, 186, 0.3);
 }
 
-.additional-filter__checkbox:disabled + .additional-filter__label::after {
-  background-color: rgba(104, 183, 56, 0.3);
+.additional-filter__checkbox:active + .additional-filter__label::after {
+  border-color: rgba(104, 183, 56, 0.3);
 }
 
 .program__other {
