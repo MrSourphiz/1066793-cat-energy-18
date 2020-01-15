@@ -38,6 +38,15 @@
   padding: 0 20px;
   padding-bottom: 24px;
 
+  border: @border;
+  border-bottom: none;
+}
+
+.product-list__item:first-child {
+  border-top: none;
+}
+
+.product-list__item:last-child {
   border-bottom: @border;
 }
 
@@ -75,7 +84,7 @@
   text-transform: @text-transform;
   color: @font-color-black;
 
-  padding-top: 5px;
+  padding-top: 4px;
 
   margin-bottom: 13px;
 }
